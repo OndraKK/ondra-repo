@@ -1,0 +1,81 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 788px;
+  overflow: hidden;
+}
+
+.imageWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.content {
+  position: absolute;
+  color: white;
+}
+
+
+.button:hover {
+  background-color: #0059b3;
+}
+
+/* Media queries for mobile */
+@media (max-width: 768px) {
+  .content {
+    top: 30%;
+  }
+  .hero {
+    height: 503px;
+  }
+
+  .title {
+    top: 200px; /* Adjust the top value for mobile */
+  }
+
+  .paragraph {
+    top: 90px; /* Adjust the top value for mobile */
+  }
+
+  .button {
+    top: 130px; /* Adjust the top value for mobile */
+  }
+}
+/*
+.heroImage {
+  
+}
+*/
+.title {
+  margin-left: 20px;
+  margin-top: 20px;
+  color: black;
+  font-size: 32px;
+}
+
+.paragraph {
+  margin-left: 20px;
+  margin-top: 20px;
+  color: black;
+}
+
+.button {
+  margin-left: 20px;
+  margin-top: 20px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  background-color: black;
+}
+
+.button:hover {
+  background-color: #333;
+}

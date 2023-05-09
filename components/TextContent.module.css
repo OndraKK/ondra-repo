@@ -1,0 +1,115 @@
+.textContent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.leftContent {
+  width: 45%;
+}
+
+.rightContent {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.number {
+  font-weight: bold;
+}
+
+.mobileRightContent {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .textContent {
+    flex-direction: column;
+  }
+
+  .leftContent,
+  .rightContent {
+    width: 100%;
+  }
+
+  .rightContent {
+    display: none;
+  }
+
+  .mobileRightContent {
+    display: block;
+    margin-top: 20px;
+  }
+}
+
+.leftButton {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  margin-top: 20px; 
+}
+
+.leftButton:hover {
+  background-color: #333;
+}
+
+.logoTextWrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 20px; 
+}
+
+.placeholderLogo {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.smallText {
+  font-size: 14px;
+  color: #333;
+  width: calc(100% - 20px); /* match the width of the right side content */
+  box-sizing: border-box; /* include padding and border in the element's total width and height */
+}
+
+.contactSection {
+  margin-top: 20px;
+}
+
+.callButton,
+.emailButton {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.callButton {
+  background-color: #333;
+}
+
+.callButton:hover {
+  background-color: #222;
+}
+
+.emailButton {
+  background-color: #ffffff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.emailButton:hover {
+  background-color: #f2f2f2;
+}
+
+.formWrapper {
+  margin-top: 20px;
+}
